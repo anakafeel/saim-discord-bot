@@ -1,0 +1,246 @@
+import discord 
+import os 
+import asyncio
+from discord.ext import commands
+import random
+
+client = discord.Client()
+bot = commands.Bot(command_prefix=">")
+
+@client.event
+async def on_ready():
+  print('we have logged in as {0.user}'.format(client))
+
+@client.event 
+async def on_message(message):
+  if message.author == client.user:
+    return
+
+  if message.content.startswith('>salaam'):
+    await message.channel.send('walekumassalaam patthey')
+  
+
+def arfan(ctx):
+  return ctx.message.author.id == 368058579657293824
+
+@client.commands()
+@commands.check(arfan)
+async def omar(ctx):
+  await ctx.send('chutiya')  
+
+
+
+
+
+
+
+
+
+
+  while message.author.id == omar:
+    if message.content.startswith('>salaam'):
+      await message.channel.send('yooo omar')
+      return
+    if message.content.startswith('>sex'):
+      await message.channel.send("anytime with you baby ;)")  
+      return  
+
+  while message.author.id == arfan:
+    if message.content.startswith('>salaam'):
+      choices = ('begone thot', 'are you like degenerate?', 'you are adopted', 'chutiya')
+      await message.channel.send(random.choice(choices))
+      return
+    if message.content.startswith('>sex'):
+      await message.channel.send("ew. never in your wildest dreams you cunt.")  
+      return    
+
+  while message.author.id == saim:
+    if message.content == '>salaam':
+      await message.channel.send("walekumassalaam saim")
+      return
+
+    if message.content.startswith('>sex'):
+      await message.channel.send("ok. but dont tell ur gf ;)")  
+      return      
+
+  while message.author.id == saad:
+    if message.content.startswith == ('>'):
+      await message.channel.send("sorry, I dont talk to biharis.")
+      return     
+
+  if message.content.startswith('>salaam'):
+    await message.channel.send('walekumassalaam patthey')   
+    return 
+         
+
+  if message.content.startswith('>sex'):
+    await message.channel.send('sorry, I have a gf *unlike you*')    
+    return    
+  return
+
+
+
+tenor key = GST1BBXCT14X
+
+
+  g_embed = discord.message.Embed(title = (user) + ' is ' + str(g_value) + '% gay!', description = 'Heh', color = discord.Colour.gold())
+  g_embed.set_author(name = 'According to my calculations, ')
+
+  g_embed.set_thumbnail(url = 'https://www.crossed-flag-pins.com/animated-flag-gif/gifs/Rainbow_240-animated-flag-gifs.gif')
+
+
+  g_embed.set_footer(text = 'Gay check from: {}'.format(ctx.author.display_name))  
+
+
+
+
+
+
+
+@client.command(pass_context = True)
+
+async def howgay(ctx, user):
+
+
+  g_value = str({math.floor(random.randint(1,101))})
+
+
+  await ctx.send(f"Looks like {user} is " + g_value + '% gay...')
+  return
+
+  client.add_command('howgay')  
+
+@client.command(pass_context = True)
+
+async def slap(ctx, user):
+  await ctx.send(f"{ctx.author.mention} slapped {user}!")
+
+  apikey = "GST1BBXCT14X"
+  lmt = 20
+
+  search_term = "anime slap"
+
+  r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+
+  json_file = r.json()
+
+  index = math.floor(random.randint(0, int(len(json_file['results']) - 1)))
+
+  await ctx.send(json_file['results'][index]['url'])
+  return 
+
+  client.add_command('slap')
+
+
+@client.command(pass_context = True)
+
+async def kiss(ctx, user):
+  await ctx.send(f"{ctx.author.mention} kissed {user}!")
+
+  apikey = "GST1BBXCT14X"
+  lmt = 20
+
+  search_term = "anime kiss"
+
+  r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+
+  json_file = r.json()
+
+  index = math.floor(random.randint(0, int(len(json_file['results']) - 1)))
+
+  await ctx.send(json_file['results'][index]['url'])
+  return 
+
+  client.add_command('kiss')
+
+
+@client.command(pass_context = True)
+
+async def hug(ctx, user):
+  await ctx.send(f"{ctx.author.mention} hugged {user}!")
+
+  apikey = "GST1BBXCT14X"
+  lmt = 20
+
+  search_term = "anime hug"
+
+  r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+
+  json_file = r.json()
+
+  index = math.floor(random.randint(0, int(len(json_file['results']) - 1)))
+
+  await ctx.send(json_file['results'][index]['url'])
+  return 
+
+  client.add_command('hug')
+
+
+
+@client.command(pass_context = True)
+
+async def wave(ctx, user):
+  await ctx.send(f"{ctx.author.mention} waves at {user}!")
+
+  apikey = "GST1BBXCT14X"
+  lmt = 20
+
+  search_term = "anime wave"
+
+  r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+
+  json_file = r.json()
+
+  index = math.floor(random.randint(0, int(len(json_file['results']) - 1)))
+
+  await ctx.send(json_file['results'][index]['url'])
+  return 
+
+  client.add_command('wave')
+
+
+@client.command(pass_context = True)
+
+async def spank(ctx, user):
+  await ctx.send(f"{ctx.author.mention} spanked {user}!")
+
+  apikey = "GST1BBXCT14X"
+  lmt = 20
+
+  search_term = "anime spank"
+
+  r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+
+  json_file = r.json()
+
+  index = math.floor(random.randint(0, int(len(json_file['results']) - 1)))
+
+  await ctx.send(json_file['results'][index]['url'])
+  return 
+
+  client.add_command('spank')
+
+@client.command(pass_context = True)
+
+async def gm(ctx):
+  await ctx.send(f"{ctx.author.mention} GOOD FRIKIN MORNING FAM")
+
+  apikey = "GST1BBXCT14X"
+  lmt = 20
+
+  search_term = "anime good morning"
+
+  r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+
+  json_file = r.json()
+
+  index = math.floor(random.randint(0, int(len(json_file['results']) - 1)))
+
+  await ctx.send(json_file['results'][index]['url'])
+  return 
+
+  client.add_command('gm')
+
+
+client.run(os.environ['key'])
+              
